@@ -1,0 +1,376 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Tell the browser to render HTML 5 elements as block */
+header, footer, section, aside, nav, article {
+	display: block;
+}
+
+body {
+	margin: 0 auto;
+	padding: 22px 0;
+	width: 940px;
+	font: 13px/22px Verdana, Arial, sans-serif;
+	background: #f0f0f0;
+}
+
+h1, h2 {
+	font-size: 28px;
+	line-height: 44px;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 22px;
+	padding: 11px 0;
+}
+
+p {
+	padding-bottom: 22px;
+}
+
+img {
+	border-style: none;
+}
+
+
+/*------------------------------
+Menus
+------------------------------*/
+
+nav {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: url("images/nav_background2.png");
+}
+
+nav ul {
+	margin: 0 auto;
+	left: 50px;
+	width: 940px;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+}
+		
+nav ul li a {
+	display: block;
+	margin-right: 20px;
+	width: 140px;
+	font-size: 14px;
+	line-height: 44px;
+	text-align: center;
+	text-decoration: none;
+	color: #f0f0f0;
+}
+			
+nav ul li a:hover {
+	color: #fff;
+}
+			
+nav ul li.selected a {
+	color: #fff;
+}
+
+/*------------------------------
+Intro
+------------------------------*/
+
+#intro {
+	position: relative;
+	margin-top: 66px;
+	padding-top: 44px;
+	padding-bottom: 15px;
+	padding-left: 44px;
+	padding-right: 44px;
+	height: 280px;
+	
+	/* Background-size not implemented yet */
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	-khtml-background-size: 100%;
+
+	
+	/* Border-radius not implemented yet */
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+}
+
+#intro h2, #intro p {
+	position: relative;
+	z-index: 9999;
+	width: 336px;
+}
+	
+#intro h2 {
+	padding: 0 0 22px 0;
+	font-weight: normal;
+	color: #000;
+}
+
+#intro p {
+	padding: 0;
+	color: #d9f499;
+}
+
+#intro img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 286px;
+	width: 940px;
+
+	/* Border-radius not implemented yet */
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+}
+
+/*------------------------------
+Content & Aside
+------------------------------*/
+
+#content {
+	display: table;
+	width: 940px;
+}
+
+#aside {
+	display: table-cell;
+	width: 300px;
+	background: url("images/sidebar_background.png") top left;
+	
+}
+
+#mainContent {
+	display: table-cell;
+	width: 620px;
+	padding-left:50px;
+	
+}
+
+#serviceContent {
+	display: table-cell;
+	width: 620px;
+	padding-left:20px;
+	
+}
+
+
+/*------------------------------
+Main Area
+------------------------------*/
+.main header p, .blogPost header p a {
+	font-size: 14px;
+	font-style: italic;
+	color: #777;
+}
+	
+.main header p a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.main img {
+	margin: 22px 0;
+	-webkit-box-shadow: 3px 3px 7px #777;
+}
+
+
+
+/*------------------------------
+Offers
+------------------------------*/
+
+#offers {
+	margin-top: 21px;
+	padding-top: 22px;
+	border-top: 1px solid #d7d7d7;
+}
+
+#offers article {
+	display: table;
+	padding: 22px;
+}
+	
+#offers article header {
+	display: table-cell;
+	width: 220px;
+	padding-right: 22px;
+}
+		
+#offers article header a {
+	display: block;
+	font-weight: bold;
+	color: #000;
+}
+			
+#offers article header a:hover {
+	text-decoration: none;
+}
+		
+#offers article p {
+	padding: 0;
+}
+
+
+
+/*------------------------------
+Form
+------------------------------*/
+form {
+	margin-top: 10px;
+	padding-top: 0px;
+}
+
+form p {
+	display: table;
+	margin-bottom: 22px;
+	padding: 0 22px;
+}
+
+form label {
+	display: table-cell;
+	width: 140px;
+	padding-right: 20px;
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+	
+form input[type="text"], form input[type="email"], form input[type="url"]. form input[type="password"] {
+	display: table-cell;
+	width: 300px;
+	height: 20px;
+	border: 1px solid #d7d7d7;
+}
+
+form textarea {
+	width: 300px;
+	height: 100px;
+	border: 1px solid #d7d7d7;
+}
+
+form input[type="submit"] {
+	margin-left: 162px;
+}
+
+
+/*------------------------------
+Aside
+------------------------------*/
+aside section {
+	margin: 22px 0 0 0;
+	padding: 11px 22px;
+	background: url("images/sidebar_section_background.png") repeat-x;
+	
+	/* Border-radius not implemented yet */
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+}
+
+aside section ul {
+	margin: 0 0 0 22px;
+	list-style: none;
+}
+	
+aside section ul li a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+		
+aside section ul li a:hover {
+	text-decoration: underline;
+}
+
+/*------------------------------
+Footer
+------------------------------*/
+footer {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #777;
+	
+	font-size:10px;
+	color:#FFFFFF;
+	text-align:center;
+	line-height: 1.3em;
+	clear:left;
+}
+
+footer div {
+	display: table;
+	margin: 0 auto;
+	padding: 44px 0;
+	width: 940px;
+	color: #777;
+}
+
+footer div section {
+	display: table-cell;
+	width: 300px;
+}
+
+footer div #about, footer div #blogroll {
+	padding-right: 20px;
+}
+	
+footer h3 {
+	color: #FFF;
+}
+
+footer p {
+	width:900px;
+	color: #FFFFFF;
+	margin-bottom: 7px !important;
+}
+
+footer a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size:10px;
+}
+
+footer a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+footer ul {
+	margin: 0 0 0 40px;
+	list-style: square;
+	color: #565656;
+}
+
+footer ul li a {
+	display: block;
+}
+
+/*------------------------------
+Bottom Offers
+------------------------------*/
+	
+.offerOne {
+	float: left;
+	height: 300px;
+	margin: 4px 0 0 0;
+	color: black;
+	width: 300px;
+	padding-bottom:20px;
+}
+
+.offerTwo {
+	float: left;
+	margin: 4px 0 0 18px;
+	width: 300px;
+	height: 300px;
+	color: black;
+	padding-bottom:20px;
+}
